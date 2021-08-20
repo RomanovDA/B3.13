@@ -84,7 +84,7 @@ class TopLevelTag:  # для тегов
 
 if __name__ == "__main__":
     # with TopLevelTag("div", klass=("container", "container-fluid"), id="lead") as div:
-    with TopLevelTag("html") as body:
+    with TopLevelTag("body") as body:
         with TopLevelTag("div") as div:
             with Tag("img", is_single=True, src="/icon.png") as img:
                 div.children.append(img)
